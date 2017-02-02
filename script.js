@@ -1,9 +1,7 @@
 // Overlaid on faces
 var overlay = "💩";
 
-// Initialize a new Clarifai app
-var app = new Clarifai.App(cId, cSec);
-
+// These will contain our canvas context later
 var canvas, ctx;
 
 // We'll populate this later
@@ -13,6 +11,9 @@ var imageDetails = {
   clarifaiFaces: [],
   realFaces: []
 };
+
+// Initialize a new Clarifai app
+var app = new Clarifai.App(cId, cSec);
 
 $(document).ready(function() {
 
